@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: testMe
+server:
+  port: 8081
+smartlife:
+  security:
+    fully-authenticated:
+      - /test1/**
+    permit-all:
+       - /test1/v2/3
+       - /test1/v2/4
+       - /echo
+   # methods-ignore:  
+   #   GET:
+   #     - /test1/v2/**
+   # ignore:
+   #   GET:
+   #     - /test1/v2/3  
+   #     - /test1/v2/4
+   #     - /echo
